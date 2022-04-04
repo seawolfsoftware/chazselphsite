@@ -1,0 +1,291 @@
+html {
+    background-color: #fff;
+    position: relative;
+    min-height: 100%;
+    font-family: sans-serif;
+    line-height: 1.15;
+}
+
+
+body {
+    
+    margin-bottom: 60px !important;
+    margin-top: 60px !important;
+
+}
+body > .container {
+  padding: 60px 15px 0;
+}
+header {
+    display: block;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f5f5f5;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+/* stylelint-disable selector-list-comma-newline-after */
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+#article-header {
+    color: #121212;
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.9375rem;
+    line-height: 2.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 600px;
+    max-width: 600px;
+}
+#audio {
+    display: block;
+    width: 600px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+p {
+
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    font-size: 1.15rem;
+    line-height: 1.875rem;
+    width: 600px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.references li {
+
+    list-style-type: none;
+    width: 60%;
+    margin: 10px auto;
+}
+
+h1 {
+    color: #121212;
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+    line-height: 3rem;
+    font-size: 30px;
+}
+
+hr {
+    width: 50%;
+    margin: auto !important;
+    margin-bottom: 25px !important;
+}
+.image-class {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+time {
+    display: block;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    width: 600px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#author {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    font-weight: 700;
+    color: #333;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    width: 600px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#fieldworkers {
+    height: auto;
+    vertical-align: top;
+}
+
+#reference-header {
+    text-align:  center;
+}
+figcaption {
+    line-height: 1.25rem;
+    color: #666;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    font-size: 1rem;
+    width: 600px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#georgia-folklife-project {
+    text-decoration: none;
+}
+
+
+ul.topnav {
+    font-family: 'Bebas Neue', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001246;
+    font-size: 1.25rem;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+ul.topnav li a:hover {
+  background-color: #333399;
+}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    p {
+        font-family: nyt-imperial,georgia,'times new roman',times,serif;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        width: calc(100% - 20px);
+        max-width: 600px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    time {
+        width: calc(100% - 40px);
+        max-width: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #fieldworkers {
+        height: auto;
+        width: calc(100% - 40px);
+        max-width: 600px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    figcaption {
+        font-size: 0.85rem;
+    }
+    #article-header {
+      width: calc(100% - 40px);
+      max-width: 600px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    #author {
+        width: calc(100% - 40px);
+        max-width: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .references li {
+        width: 90%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    p {
+        font-family: nyt-imperial,georgia,'times new roman',times,serif;
+        font-size: 1.15rem;
+        line-height: 1.875rem;
+
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
