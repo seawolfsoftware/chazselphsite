@@ -1,26 +1,74 @@
-
-
 {% extends "base.html" %}
 
 
 
+{% block head %}
 
-<head>
 
-    {% block head %}
-    <meta charset="UTF-8">
+        {% load static %}
+        <link rel="stylesheet" href="{% static '/css/posts-index.css' %}">
 
-    {% block title %}Post Detail{% endblock %}
-    {% load static %}
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-    {% endblock %}
-</head>
-<body>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+              crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+                crossorigin="anonymous"></script>
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+        <title>Recent Posts</title>
+{% endblock %}
+
+
 
 
 {% block content %}
 
-{{ post.body }}
+
+
+
+   <h1 id="article-header">{{ post.title }}</h1>
+
+        <figure>
+            {% load static %}
+            <img class="image-class" src="{% static 'img/jackdempsey.png' %}"  alt="Jack Dempsey's Barbeque Pit">
+            <figcaption>Jack Dempsey chops wood in Enigma, Georgia, 1977. <br/>
+                <em>Library of Congress</em><sup><a href="#reference2"> 2</sup></a>
+            </figcaption>
+        </figure>
+
+
+        <div id="author">By {{ post.author }}</div>
+        <time>Posted {{ post.publish }}</time>
+
+
+
+<div id="audio" class="container">
+  <div class="row">
+    <div class="col-sm">
+      Part 1<sup><a href="#reference3"> 3</sup></a>
+    <audio controls>
+    <source src="https://tile.loc.gov/storage-services/media/afc/afc1982010/afc1982010_afs21186a.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio> 
+    </div>
+    <div class="col-sm">
+      Part 2<sup><a href="#reference3"> 3</sup></a>
+      <audio controls>
+    <source src="https://tile.loc.gov/storage-services/media/afc/afc1982010/afc1982010_afs21186b.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    </div>
+  </div>
+
+</div>
+
+    <hr>
+
+
+{{ post.body|safe }}
 
 {% endblock %}

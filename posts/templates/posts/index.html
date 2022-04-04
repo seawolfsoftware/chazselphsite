@@ -55,7 +55,7 @@
                   </div>
 
                   <div class="row">
-                    <p id="post_body"> {{ post.body|truncatewords:50 }}</p>
+                    <p id="post_body"> {{ post.body|safe|truncatewords:50 }}</p>
                   </div> 
               </div>
     </div>

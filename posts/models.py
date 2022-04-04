@@ -15,6 +15,13 @@ class Post(models.Model):
 	updated = models.DateTimeField(auto_now=True)
 	status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
 
+	# file will be saved to MEDIA_ROOT / uploads / 2022 / 01 / 30
+	image_one = models.ImageField(blank=True, upload_to ='uploads/')
+	image_two = models.ImageField(blank=True, upload_to ='uploads/')
+	image_three = models.ImageField(blank=True, upload_to ='uploads/')
+	image_four = models.ImageField(blank=True, upload_to ='uploads/')
+	image_five = models.ImageField(blank=True, upload_to ='uploads/')
+
 	class Meta:
 		ordering = ('-publish',)
 
